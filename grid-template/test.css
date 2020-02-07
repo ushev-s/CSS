@@ -1,0 +1,188 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.page {
+  display: grid;
+  background-color: #292929;
+  color: #ffffff;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.header {
+  padding: 25px;
+  background-color: #242424;
+}
+
+.navigation {
+  padding: 25px;
+  background-color: #826550;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    order: -1;
+  }
+}
+
+/* Statistics */
+
+.statistics {
+  display: grid;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .statistics {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .statistics {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.statistics_header {
+  padding: 25px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .statistics_header {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .statistics_header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}
+
+.statistics_table,
+.statistics_body,
+.statistics_row {
+  display: contents;
+}
+
+.statistics_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.statistics_cell {
+  padding: 25px;
+}
+
+.statistics_cell--one {
+  background-color: #404040;
+}
+
+.statistics_cell--two {
+  background-color: #4e4e4e;
+}
+
+.statistics_cell--three {
+  background-color: #353535;
+}
+
+.statistics_cell--four {
+  background-color: #404040;
+}
+
+
+/* Advantages */
+
+.advantages {
+  padding: 25px;
+  display: grid;
+  grid-gap: 25px;
+  background-color: #242424;
+}
+
+@media (min-width: 1024px) {
+  .advantages {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages_item {
+  padding: 25px;
+  background-color: #353535;
+}
+
+/* News */
+
+.news {
+  padding: 25px;
+  display: grid;
+  grid-gap: 25px;
+  background-color: #f8f5f2;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .news {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.news_item {
+  padding: 25px;
+  background-color: #e5ddd5;
+  color: #000000;
+}
+
+/* Footer */
+
+.footer {
+  padding: 25px;
+  display: grid;
+  grid-gap: 25px;
+  background-color: #292929;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.contacts {
+  padding: 25px;
+  background-color: #353535;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contacts {
+    grid-column: 1 / 3;
+  }
+}
+
+.copyright {
+  padding: 25px;
+  background-color: #353535;
+}
+
+.social {
+  padding: 25px;
+  background-color: #353535;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .social {
+    grid-row-start: 2;
+    grid-column: 1 / 4;
+  }
+}
