@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -94,7 +96,6 @@
 .statistics_cell--four {
   background-color: #404040;
 }
-
 
 /* Advantages */
 
